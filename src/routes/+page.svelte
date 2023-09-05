@@ -34,7 +34,7 @@ h1 {
 	box-sizing: border-box;
 	flex: 1 1 auto;
 	margin: 8px;
-	padding: 4px;
+	padding: 8px;
 	border: 8px solid black;
 }
 
