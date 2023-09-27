@@ -1,5 +1,11 @@
 <section id="splash">
-	<div id="splash-border"><div id="splash-image" /></div>
+	<div id="splash-border">
+		<div id="splash-image">
+			<a class="splash-link" href="https://store.steampowered.com/app/2571840/Defense_of_Nations/" target="_blank">
+				Try it on Steam
+			</a>
+		</div>
+	</div>
 </section>
 
 <section id="game-desc">
@@ -57,6 +63,25 @@ h1 {
 	flex-direction: column;
 	padding: 8px;
 	width: 100%;
+}
+
+.splash-link {
+	margin-left: 2ch;
+	margin-bottom: 3.5ex;
+	padding: 12px;
+	width: 6.5ch;
+	line-height: 1.8ex;
+	color: #000;
+	background-color: #74C5E2;
+	border: 8px solid #E1DBC4;
+	border-radius: 20px;
+	outline: 8px solid #000;
+	transition: background-color 0.2s, border-color 0.2s;
+}
+
+.splash-link:focus, .splash-link:hover {
+	background-color: #F8C635;
+	border-color: #000;
 }
 
 @media screen and (min-width: 750px) {

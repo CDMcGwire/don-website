@@ -1,18 +1,20 @@
 <article>
 <h1>What is this?</h1>
-<p>Well, you're here a bit early, but it's a game! The full explanation will come with the Steam page, but if you're so inclined you can look at the most recent alpha build here:</p>
-<a href="https://the-goodship-friendship.itch.io/defense-of-nations">[ALPHA] Defense of Nations (on Itch.io)</a>
+<p>A base defense shooter in the vein of flash game classics like <em>Elona Shooter</em> and <em>Defend Your Castle</em> but with a satirical, political-sim twist. Shoot hordes of monsters, negotiate your operating budget, and navigate international rivalries, all for <strong style="color: #0397CC;">The Good of Humanity™️!</strong></p>
 <h1>Who are you?</h1>
-<p><strong>The Goodship Friendship!</strong> … A solo developer from the States doing this commercially for the first time.</p>
+<p><strong>The Goodship Friendship!</strong> … A solo developer from the States attempting to do this professionally for the first time.</p>
 <p>I like pizza, long walks in the rain, and arguing about what the genre “Action Adventure” even means.</p>
 <p>(this will technically be one, by the by)</p>
+<h1>When will the full game come out?</h1>
+<p>Depends on what funding I can find. I didn't want to do Early Access only to discover that I won't be able to deliver a game I'm proud of for a few more years, so I'm just putting a preview demo out to show everyone the vision in action and we'll see where things go.</p>
+<h1>What platforms do you plan to support?</h1>
+<p>PC and Steam Deck primarily with high liklihood for Mac as well.</p>
+<p>Mobile and Console support are also being kept in mind design-wise but not actively developed for.</p>
 <h1>Why are you doing this?</h1>
 <p><del>Money</del> Money.</p>
 <p>Like they say. No easier path to riches than making art.</p>
-<h1>Did you really need a FAQ for this?</h1>
-<p>Yes. I've wanted one of these for like, ever. Thank you very much for asking.</p>
-<h1 class="smoll">Should I play the Trails series of JRPGs?</h1>
-<p class="smoll">If you have a Steam account, Trails in the Sky is the best starting point, otherwise Trails of Cold Steel is widely available and a fun time as well. They feature a best-in-genre combat system and a expansive and detailed world full of fully fleshed out characters and unforgettable stories. The current overarching narrative begins at Sky First Chapter and spans 10 games currently released in US with ........</p>
+<p>There's also something about having a passion for game design since I was a young kid and realizing that if I really want something to happen I need to just start doing it and all that.</p>
+<p>But we'll just keep it simple with: “the money.”</p>
 </article>
 
 <style>
