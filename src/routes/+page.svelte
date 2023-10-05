@@ -33,7 +33,7 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	height: 90vh;
+	height: 80vh;
 }
 
 #splash-border {
@@ -66,22 +66,23 @@ h1 {
 }
 
 .splash-link {
-	margin-left: 2ch;
-	margin-bottom: 3.5ex;
+	margin-left: 4ch;
+	margin-bottom: 5ex;
 	padding: 12px;
 	width: 6.5ch;
+	font-size: 2.1rem;
 	line-height: 1.8ex;
 	color: #000;
 	background-color: #74C5E2;
 	border: 8px solid #E1DBC4;
 	border-radius: 20px;
-	outline: 8px solid #000;
-	transition: background-color 0.2s, border-color 0.2s;
+	outline: 4px solid #2F333F;
+	transition: background-color 0.2s, border-color 0.2s, font-size 0.4s, width 0.4s;
 }
 
 .splash-link:focus, .splash-link:hover {
 	background-color: #F8C635;
-	border-color: #000;
+	border-color: #2F333F;
 }
 
 @media screen and (min-width: 750px) {
@@ -93,9 +94,15 @@ h1 {
 		font-size: 2rem;
 		margin-left: 6ch;
 	}
-
+	
 	#game-desc {
 		width: 750px;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.splash-link {
+		font-size: 3rem;
 	}
 }
 </style>
