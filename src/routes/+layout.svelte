@@ -35,7 +35,7 @@
 </footer>
 
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700+400&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
 
 	:global(html) {
 		box-sizing: border-box;

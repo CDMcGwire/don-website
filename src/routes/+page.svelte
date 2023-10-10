@@ -33,7 +33,8 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	height: 80vh;
+	max-width: 1920px;
+	height: 60vh;
 }
 
 #splash-border {
@@ -69,8 +70,9 @@ h1 {
 	margin-left: 4ch;
 	margin-bottom: 5ex;
 	padding: 12px;
-	width: 6.5ch;
+	width: 6.0ch;
 	font-size: 2.1rem;
+	font-weight: bold;
 	line-height: 1.8ex;
 	color: #000;
 	background-color: #74C5E2;
@@ -93,6 +95,10 @@ h1 {
 	.subheader1 {
 		font-size: 2rem;
 		margin-left: 6ch;
+	}
+	
+	#splash {
+		height: 70vh;
 	}
 	
 	#game-desc {
