@@ -35,7 +35,7 @@
 </footer>
 
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700+400&display=swap');
 
 	:global(html) {
 		box-sizing: border-box;
@@ -49,6 +49,7 @@
 	:global(body) {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		width: 100%;
 		min-height: 100vh;
 		margin: 0;
@@ -91,6 +92,7 @@
 		margin-top: 100px;
 		padding-bottom: 50px;
 		width: 100%;
+		font-weight: bold;
 	}
 
 	.box-footer-block {

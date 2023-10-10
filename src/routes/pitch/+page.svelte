@@ -1,5 +1,6 @@
-﻿<script xmlns="http://www.w3.org/1999/html">
+﻿<script>
 	import YouTubeEmbed from "$lib/components/YouTubeEmbed.svelte";
+	export let data;
 </script>
 
 <article>
@@ -7,8 +8,7 @@
 	<div class="elevator-pitch">
 		<p>
 			A base defense shooter in the vein of flash game classics like <em>Defend Your Castle</em> but with a
-			satirical,
-			political-sim twist.
+			satirical, political-sim twist.
 		</p>
 		<p>
 			<strong>Shoot hordes of monsters</strong>, <strong>negotiate your operating budget</strong>, and <strong>navigate
@@ -77,18 +77,24 @@
 	</p>
 	<p>
 		Things could be worse, though. After a few decades of constant pressure, humanity did what humanity does best
-		post-industrial-revolution: <em>build a giant bureaucracy to beat the problem to death with scale</em>.
+		in the post-industrial-revolution: <em>build a giant bureaucracy to beat the problem to death with scale</em>.
 		The most prominent of these is the joint, international <strong>Defense of Nations Treaty (DONT)
 		Organization</strong>.
 	</p>
 	<p>
 		High on a sense of Duty, the player character has joined the Organization as a new combat officer.
-		Unfortunately, the org has a LOT of desk work that needs to get done. So, the front lines might be… <em>just a
-		tad…</em> <strong>understaffed</strong>.
+		Unfortunately, the org has a LOT of desk work that needs to get done and a number of people seem to have lost
+		the plot entirely. So, the front lines might be… <em>just a tad…</em> <strong>understaffed</strong>.
 	</p>
 	<p>Good luck out there!</p>
-	
+
 	<h1>The PLAN</h1>
+	<h1>SCREENSHOTS</h1>
+	<div class="scrn-grid">
+		{#each data.screenshots as screenshot}
+			<img src="{screenshot}" alt="Screenshot" />
+		{/each}
+	</div>
 </article>
 
 <style>
@@ -154,7 +160,7 @@
 
 	strong {
 		font-weight: bold;
-		color: #0397CC;
+		color: #495581;
 	}
 
 	.img-banner {
@@ -197,6 +203,18 @@
 		max-width: 1280px;
 	}
 
+	.scrn-grid {
+		display: grid;
+		grid: auto-flow dense / 1fr;
+		grid-gap: 6px;
+		width: 100%;
+		max-width: 1400px;
+	}
+
+	.scrn-grid > img {
+		width: 100%;
+	}
+
 	@media screen and (min-width: 700px) {
 		.elevator-pitch {
 			display: flex;
@@ -232,6 +250,10 @@
 			margin-right: 200px;
 			padding: 0px;
 		}
+
+		.scrn-grid {
+			grid: auto-flow dense / 1fr 1fr;
+		}
 	}
 
 	@media screen and (min-width: 1400px) {
@@ -245,6 +267,10 @@
 
 		#lineup-banner {
 			height: 320px;
+		}
+
+		.scrn-grid {
+			grid: auto-flow dense / 1fr 1fr 1fr;
 		}
 	}
 
