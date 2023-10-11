@@ -158,6 +158,14 @@
 		margin-top: 0;
 	}
 
+	p + ul {
+		margin-top: 0;
+	}
+
+	p {
+		line-height: 1.25;
+	}
+
 	ul {
 		list-style: circle;
 	}

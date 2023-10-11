@@ -1,5 +1,6 @@
 ﻿<script>
 	import YouTubeEmbed from "$lib/components/YouTubeEmbed.svelte";
+
 	export let data;
 </script>
 
@@ -25,7 +26,7 @@
 
 	<h1>VIDEO DEMO</h1>
 	<div class="video-box">
-		<YouTubeEmbed source="" />
+		<YouTubeEmbed source="https://www.youtube.com/embed/gvIYsyKl5q8?si=itRkb3YWtlDuNE60" />
 	</div>
 
 	<h1>The HOOKS</h1>
@@ -88,7 +89,74 @@
 	</p>
 	<p>Good luck out there!</p>
 
-	<h1>The PLAN</h1>
+	<h1>The DEVELOPMENT PLAN</h1>
+	<p>
+		We have the core game already, now we want to make the full game and we want it
+		<em><strong>excellent</strong></em> : finish the narrative content; more weapon, enemy, and locale variety; more
+		visual polish and flair; and further refinement of the gameplay.
+	</p>
+	<p>
+		The scale of the game is expected to stay very "indie" and very within the realm of what a solo developer and
+		one or two contract artists can accomplish in a years time from where we are now. <strong>For a 1.0 release, we
+		expect
+		to deliver</strong>:
+	</p>
+	<ul>
+		<li>
+			A core, 21 in-game month "Campaign" lasting about 1-2 hours per playthrough.
+		</li>
+		<li>
+			5-6 possible primary endings with cutscenes (and a few bad endings as comes up naturally in the writing).
+		</li>
+		<li>
+			5-6 basic enemy archetypes with 2-3 parameter tweaked variants per, as well as 3-4 unique Bosses.
+		</li>
+		<li>
+			6-7 weapons for the player with 3-5 upgrade options for each.
+		</li>
+		<li>
+			50-60 combat missions, ~100 exploration events, 30-40 budgeting events.
+		</li>
+		<li>
+			5-6 "MilSpAM" characters with about 15-20 expressions each.
+		</li>
+		<li>
+			6-7 unique combat arenas.
+		</li>
+		<li>
+			Friend leaderboards for total score and a few "fun" metrics.
+		</li>
+	</ul>
+	<p>
+		<strong>Target sale price:</strong> We're aiming for the $5-10 market with the 1.0 release.
+	</p>
+	<p>
+		<strong>Planned platform support:</strong> Windows/Linux/Mac via Steam primarily with other PC storefronts
+		included as leaderboard functionality is determined for each.
+	</p>
+	<p>
+		<strong>First-class Steam Deck support:</strong> this is a genre that takes well to "on the side" play so the
+		Deck is a natural fit for that.
+	</p>
+	<p>
+		<strong>Early Access considerations?:</strong> From a development standpoint, the game is quite agreeable to
+		iterative updates on Early Access. The content pipeline is already quite modular and from work experience in
+		other areas of the software industry we're used to incremental development, so doing Early Access or not would
+		change little on the production side and is more of a question of marketing, sales, and funding.
+	</p>
+	<p>
+		Basically, we like the Early Access model, but we're not putting anything on it until we can tell our players,
+		"You will have the 1.0 version within the year."
+	</p>
+	<h2>What we're looking for in a publisher</h2>
+	<p>
+		<strong>Time and a platform.</strong> Funding is currently the biggest question on whether this project gets our
+		full-time effort and is out <em>soon</em>, or stays a side-hustle and comes out <em>eventually</em>.
+		Unsurprisingly we'd prefer the former. Second to that—but no less important if we want the venture to make a
+		profit in a decent amount of time—is marketing. We <em>are</em> a new studio and, admittedly, effective
+		advertisement is not top on the list of our skills as of yet.
+	</p>
+
 	<h1>SCREENSHOTS</h1>
 	<div class="scrn-grid">
 		{#each data.screenshots as screenshot}
@@ -127,40 +195,65 @@
 		margin-top: 60px;
 	}
 
-	h1 {
+	h1, h2, h3 {
 		align-self: flex-start;
 		width: 100%;
-		max-width: 600px;
-		margin: 120px 0 10px 0;
+		max-width: 700px;
+		color: #2F333F;
+	}
+
+	h1 {
+		margin: 80px 0 10px 0;
 		padding: 0 12px;
 		font-size: 3rem;
-		color: #2F333F;
+	}
+
+	h2, h3 {
+		margin-bottom: 10px;
 	}
 
 	p, ul, blockquote {
 		align-self: flex-start;
 		width: 100%;
-		max-width: 600px;
+		max-width: 700px;
 		padding: 0 12px;
 		font-size: 1.35rem;
 		color: #2F333F;
 	}
 
-	h1 + p {
+	h1 + p, h2 + p, h3 + p {
 		margin-top: 0;
+	}
+
+	h1 + ul, h2 + ul, h3 + ul {
+		margin-top: 0;
+	}
+
+	p + ul {
+		margin-top: 0;
+	}
+
+	p {
+		line-height: 1.25;
 	}
 
 	ul {
 		list-style: circle;
+		margin: 0;
 	}
 
 	li {
 		margin: 0 0 3ex 2ch;
 	}
 
+	ul.compact > li {
+		margin-bottom: 1ex;
+		font-size: 0.9em;
+	}
+
 	strong {
 		font-weight: bold;
-		color: #495581;
+		color: #5478a7;
 	}
 
 	.img-banner {
@@ -182,7 +275,7 @@
 		display: flex;
 		justify-content: center;
 		align-content: center;
-		margin: 4ex 12px 0 12px;
+		margin: 4ex 12px 5ex 12px;
 		padding: 4px;
 		font-size: 2.5rem;
 		color: #000;
@@ -205,8 +298,8 @@
 
 	.scrn-grid {
 		display: grid;
-		grid: auto-flow dense / 1fr;
-		grid-gap: 6px;
+		grid: auto-flow dense / 1fr 1fr;
+		grid-gap: 2px;
 		width: 100%;
 		max-width: 1400px;
 	}
@@ -241,18 +334,19 @@
 			height: 360px;
 		}
 
-		#lineup-banner {
+		#lineup-banner, #action-banner {
 			height: 260px;
 		}
 
 		p, h1, h2, h3, ul, blockquote {
 			align-self: center;
 			margin-right: 200px;
-			padding: 0px;
+			padding: 0;
 		}
 
 		.scrn-grid {
-			grid: auto-flow dense / 1fr 1fr;
+			grid: auto-flow dense / 1fr 1fr 1fr;
+			grid-gap: 4px;
 		}
 	}
 
@@ -261,16 +355,8 @@
 			height: 420px;
 		}
 
-		#action-banner {
+		#lineup-banner, #action-banner {
 			height: 320px;
-		}
-
-		#lineup-banner {
-			height: 320px;
-		}
-
-		.scrn-grid {
-			grid: auto-flow dense / 1fr 1fr 1fr;
 		}
 	}
 
