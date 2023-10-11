@@ -91,8 +91,8 @@
 
 	<h1>The DEVELOPMENT PLAN</h1>
 	<p>
-		We have the core game already, now we want to make the full game and we want it
-		<em><strong>excellent</strong></em> : finish the narrative content; more weapon, enemy, and locale variety; more
+		We have the core game already, now we want to make the <em>full</em> game and we want it
+		<em><strong>excellent</strong></em>: finish the narrative content; more weapon, enemy, and locale variety; more
 		visual polish and flair; and further refinement of the gameplay.
 	</p>
 	<p>
@@ -135,8 +135,9 @@
 		included as leaderboard functionality is determined for each.
 	</p>
 	<p>
-		<strong>First-class Steam Deck support:</strong> this is a genre that takes well to "on the side" play so the
-		Deck is a natural fit for that.
+		Console ports will be considered post 1.0, though we don't suspect those will be large technical undertakings as
+		we're using the Unity Engine and already designing for a console-like experience on the <strong>Steam
+		Deck</strong>.
 	</p>
 	<p>
 		<strong>Early Access considerations?:</strong> From a development standpoint, the game is quite agreeable to
@@ -156,6 +157,17 @@
 		profit in a decent amount of time—is marketing. We <em>are</em> a new studio and, admittedly, effective
 		advertisement is not top on the list of our skills as of yet.
 	</p>
+	<p>
+		If this sounds like a good fit for your portfolio, we look forward to talking more. If not, we still thank you
+		for checking us out.
+	</p>
+	<p>Happy sailing,</p>
+	<p>
+		<img alt="The Goodship Friendship Logo" id="tgsfs-logo" src="/tgsfriendship-logo-transparent.png" />
+	</p>
+	<p>
+		<a href="mailto:contact@goodshipfriendship.com">contact@goodshipfriendship.com</a>
+	</p>
 
 	<h1>SCREENSHOTS</h1>
 	<div class="scrn-grid">
@@ -173,13 +185,13 @@
 
 	#action-banner {
 		margin-top: 120px;
-		height: 160px;
+		height: 130px;
 		background-image: url("/action-banner.png");
 	}
 
 	#lineup-banner {
 		margin-top: 120px;
-		height: 160px;
+		height: 130px;
 		background-image: url("/lineup-banner.png");
 	}
 
@@ -306,6 +318,10 @@
 
 	.scrn-grid > img {
 		width: 100%;
+	}
+
+	#tgsfs-logo {
+		width: 300px;
 	}
 
 	@media screen and (min-width: 700px) {

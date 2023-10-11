@@ -16,7 +16,7 @@
 	<div class="box-footer-block">
 		<div class="box-footer-links">
 			<div class="box-additional-info">
-				<a href="/faq">FAQ</a>
+				<a href="/the-team">The Team</a>
 				<a href="/press">Press kit</a>
 				<a href="https://twitter.com/tgsfriendship">Updates</a>
 			</div>
@@ -35,7 +35,7 @@
 </footer>
 
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 	:global(html) {
 		box-sizing: border-box;
@@ -118,7 +118,7 @@
 		align-items: flex-start;
 		max-width: 800px;
 		height: 220px;
-		font-size: 1.1rem;
+		font-size: 1.3rem;
 	}
 
 	.box-additional-info > * {
