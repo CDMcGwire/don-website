@@ -1,8 +1,12 @@
+<script>
+import YouTubeEmbed from "$lib/components/YouTubeEmbed.svelte";
+</script>
+
 <section id="splash">
 	<div id="splash-border">
 		<div id="splash-image">
 			<a class="splash-link" href="https://store.steampowered.com/app/2571840/Defense_of_Nations/" target="_blank">
-				Try it on Steam
+				Play it on Steam
 			</a>
 		</div>
 	</div>
@@ -10,7 +14,10 @@
 
 <section id="game-desc">
 	<h1>A Base Defense Shooter</h1>
-	<span class="subheader1">… for the Good of Humanity™️!</span>
+	<div class="subtitle">… for the Good of Humanity™️!</div>
+	<div id="trailer"  class="video-box">
+		<YouTubeEmbed source="https://www.youtube.com/embed/EX5pqTMwhQQ?si=kcP5iW9Cup42zt-r" />
+	</div>
 </section>
 
 <style>
@@ -20,10 +27,10 @@ h1 {
 	font-weight: 700;
 	font-size: 2.2rem;
 	font-variant: small-caps;
-	color: #000;
+	color: #2F333F;
 }
 
-.subheader1 {
+.subtitle {
 	font-size: 1.4rem;
 	font-weight: 400;
 	margin-left: 3ch;
@@ -66,16 +73,20 @@ h1 {
 	width: 100%;
 }
 
+#trailer {
+	margin: 50px 0 80px 0;
+}
+
 .splash-link {
 	margin-left: 4ch;
 	margin-bottom: 5ex;
 	padding: 12px;
-	width: 6.0ch;
+	width: 6.6ch;
 	font-size: 2.1rem;
 	font-weight: bold;
 	line-height: 1.8ex;
-	color: #000;
-	background-color: #74C5E2;
+	color: #2F333F;
+	background-color: #eeaf0f;
 	border: 8px solid #E1DBC4;
 	border-radius: 20px;
 	outline: 4px solid #2F333F;
@@ -83,8 +94,12 @@ h1 {
 }
 
 .splash-link:focus, .splash-link:hover {
-	background-color: #F8C635;
+	background-color: #e7b746;
 	border-color: #2F333F;
+}
+
+.video-box {
+	width: 100%;
 }
 
 @media screen and (min-width: 750px) {
@@ -92,7 +107,7 @@ h1 {
 		font-size: 4rem;
 	}
 
-	.subheader1 {
+	.subtitle {
 		font-size: 2rem;
 		margin-left: 6ch;
 	}
@@ -102,7 +117,7 @@ h1 {
 	}
 	
 	#game-desc {
-		width: 750px;
+		width: 1000px;
 	}
 }
 

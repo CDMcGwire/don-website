@@ -1,9 +1,11 @@
 <article>
 	<img alt="The Goodship Friendship Logo" id="tgsfs-logo" src="/tgsfriendship-logo-transparent.png" />
-	<p class="subtitle">“We make games that have nothing to do with friendship.”</p>
+	<div class="caption">“We make games that have nothing to do with friendship.”</div>
 	<h1>Who are we?</h1>
 	<div class="profile right">
 		<div class="bio">
+			<h1>Connor McGwire</h1>
+			<div class="subtitle">Designer & Programmer</div>
 			<p>
 				We is mostly just me, Connor McGwire. I'm a Software Engineer who's worked professionally in banking and
 				military technology, but the visual arts are where my passions lie (specifically games, believe it or
@@ -13,13 +15,13 @@
 				Eventually I realized that if I wanted to make a game studio like I always planned, the "right time"
 				would never come and I needed to get a bit more bull-headed about it. So here I am and
 				<a href="https://store.steampowered.com/app/2571840/Defense_of_Nations/">here's the first game
-					(Alpha)</a> of what will hopefully be many.
+					(Alpha)</a> of what will hopefully be many over the years.
 			</p>
 			<p>
 				Oh, and <a href="https://cdmcgwire.com/novels">I wrote a novel at some point</a>. I think it's pretty
 				neat. I'd love to hear what you think of it.
 			</p>
-			<a href="https://twitter.com/connor_mcgwire">@connor_mcgwire</a>
+			<p><a href="https://twitter.com/connor_mcgwire">@connor_mcgwire</a></p>
 		</div>
 		<img alt="Connor McGwire profile" src="/connor-shades.jpg">
 	</div>
@@ -99,6 +101,21 @@
 		color: #5478a7;
 	}
 
+	#tgsfs-logo {
+		width: 90vw;
+		max-width: 500px
+	}
+
+	.caption {
+		align-self: flex-end;
+		margin-top: 1ex;
+		margin-right: 0;
+		max-width: 24ch;
+		font-style: italic;
+		font-weight: bold;
+		color: #fd0000;
+	}
+
 	.img-banner {
 		width: 100%;
 		background-repeat: no-repeat;
@@ -115,6 +132,7 @@
 	}
 
 	.profile {
+		margin-top: 40px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -127,6 +145,11 @@
 	.bio > p {
 		max-width: 480px;
 	}
+	
+	.bio > h1 {
+		margin: 0;
+		font-size: 1.8em;
+	}
 
 	.profile > img {
 		box-sizing: border-box;
@@ -138,6 +161,14 @@
 
 	.profile.right > img {
 		order: 1;
+	}
+	
+	.subtitle {
+		margin: 0;
+		padding: 0 12px;
+		font-style: italic;
+		font-weight: bold;
+		color: #4a4b59;
 	}
 
 	.cta-link {
@@ -160,21 +191,6 @@
 		border-color: #000;
 	}
 
-	.subtitle {
-		align-self: flex-end;
-		margin-top: 1ex;
-		margin-right: 0;
-		max-width: 24ch;
-		font-style: italic;
-		font-weight: bold;
-		color: #fd0000;
-	}
-
-	#tgsfs-logo {
-		width: 90vw;
-		max-width: 500px
-	}
-
 	@media screen and (min-width: 800px) {
 		p, h1, h2, h3, ul, blockquote {
 			align-self: center;
@@ -182,7 +198,7 @@
 			padding: 0;
 		}
 
-		.subtitle {
+		.caption {
 			align-self: center;
 			margin-left: 350px;
 		}
@@ -213,6 +229,10 @@
 		.profile.right > img {
 			order: 3;
 			margin-left: 2ch;
+		}
+		
+		.subtitle {
+			padding: 0;
 		}
 	}
 </style>

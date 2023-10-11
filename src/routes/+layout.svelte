@@ -97,7 +97,7 @@
 
 	.box-footer-block {
 		box-sizing: border-box;
-		flex: 0 1 600px;
+		flex: 0 1 500px;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
@@ -158,9 +158,14 @@
 		border-color: #0397CC;
 	}
 
-	@media screen and (min-width: 750px) {
+	@media screen and (min-width: 800px) {
 		#home {
 			width: 675px;
+		}
+		
+		.box-footer-block {
+			flex: 0 1 550px;
+			margin-right: 250px;
 		}
 	}
 </style>

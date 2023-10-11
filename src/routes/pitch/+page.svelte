@@ -97,9 +97,8 @@
 	</p>
 	<p>
 		The scale of the game is expected to stay very "indie" and very within the realm of what a solo developer and
-		one or two contract artists can accomplish in a years time from where we are now. <strong>For a 1.0 release, we
-		expect
-		to deliver</strong>:
+		one or two contract artists can accomplish in a year's time from where we are now. <strong>For a 1.0 release, we
+		expect to deliver</strong>:
 	</p>
 	<ul>
 		<li>
@@ -131,18 +130,20 @@
 		<strong>Target sale price:</strong> We're aiming for the $5-10 market with the 1.0 release.
 	</p>
 	<p>
-		<strong>Planned platform support:</strong> Windows/Linux/Mac via Steam primarily with other PC storefronts
+		<strong>Planned platform support:</strong> Windows/Linux/Mac via Steam primarily, with other PC storefronts
 		included as leaderboard functionality is determined for each.
 	</p>
 	<p>
-		Console ports will be considered post 1.0, though we don't suspect those will be large technical undertakings as
-		we're using the Unity Engine and already designing for a console-like experience on the <strong>Steam
-		Deck</strong>.
+		Console and Mobile ports will be considered post 1.0. As we built the game on Unity and have already been
+		designing for a console-like experience for the <strong>Steam Deck</strong>, the game itself will not require
+		significant changes to port. However, we are not underestimating the effort it will require to <em>properly</em>
+		integrate the proprietary SDKs and test on target hardware, even with Unity's porting features. So, only
+		computer platforms are being actively developed for at this time.
 	</p>
 	<p>
-		<strong>Early Access considerations?:</strong> From a development standpoint, the game is quite agreeable to
-		iterative updates on Early Access. The content pipeline is already quite modular and from work experience in
-		other areas of the software industry we're used to incremental development, so doing Early Access or not would
+		<strong>Early Access considerations?</strong> From a development standpoint, the game is quite agreeable to
+		iterative updates on Early Access. The content pipeline is quite modular and from our work experience in
+		other areas of the software industry we're used to incremental development. So, doing Early Access or not would
 		change little on the production side and is more of a question of marketing, sales, and funding.
 	</p>
 	<p>
@@ -222,6 +223,7 @@
 
 	h2, h3 {
 		margin-bottom: 10px;
+		padding: 0 12px;
 	}
 
 	p, ul, blockquote {
